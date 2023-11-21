@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC App - Maximo Herrera</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="mt-5 mb-5">Registro de Alumnos - Calculo del IMC</h2>
+        <div class="mb-5">
+            <div class="row">
+                <div class="form-group col-md-6 mb-3">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Ingrese el Apellido">
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="legajo">Legajo</label>
+                    <input type="number" name="legajo" class="form-control" id="legajo" placeholder="Ingrese el Legajo">
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="sexo">Sexo</label>
+                    <input type="text" name="sexo" class="form-control" id="sexo" placeholder="masculino, femenino u otro">
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="peso">Peso en KG</label>
+                    <input type="number" name="peso" class="form-control" id="peso" placeholder="Ingrese el peso en Kg">
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="name">Ingrese la Altura en CM</label>
+                    <input type="number" name="altura" class="form-control" id="altura" placeholder="Ingrese la Altura en CM">
+                </div>
+                
+                <div class="col-lg-12 mt-5">
+                    <button class="btn btn-success" id="Submit" onclick="addData()">Calcular</button>
+                    <button class="btn btn-primary" id="Update" >Actualizar</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5">
+            <div class="col-12">
+                <table class="table table-bordered" id="crudTable">
+                    <thead>
+                        <tr>
+                            <th>Apellido</th>
+                            <th>Legajo</th>
+                            <th>sexo</th>
+                            <th>peso</th>
+                            <th>altura</th>
+                            <th>Indice Masa Corporal</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
